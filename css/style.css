@@ -1,3 +1,20 @@
+* {
+  margin: 0;
+  padding: 0; }
 
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#tab {
+  width: 600px;
+  border: 1px solid #000;
+  margin: 100px auto; }
+  #tab ul {
+    width: 100%; }
+    #tab ul li {
+      width: calc(100% / 3); }
 
 /*# sourceMappingURL=style.css.map */
