@@ -35,5 +35,17 @@ a{text-decoration: none;}
         }
     }
 
-    
+    .group{
+        width:100%; 
+        >div{
+            width:100%; 
+            padding:50px; 
+            display:none; 
+
+            &#tab1{
+                display:block; 
+            }
+        }
+
+    }
 }

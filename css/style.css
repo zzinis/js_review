@@ -33,5 +33,13 @@ a {
         #tab ul li a.on {
           background: #fff;
           color: #555; }
+  #tab .group {
+    width: 100%; }
+    #tab .group > div {
+      width: 100%;
+      padding: 50px;
+      display: none; }
+      #tab .group > div#tab1 {
+        display: block; }
 
 /*# sourceMappingURL=style.css.map */
