@@ -3,6 +3,8 @@
 ul,li{list-style: none;}
 a{text-decoration: none;}
 
+@import 'tab.scss';
+
 #tab{
     width: 600px;
     border: 1px solid #000;
