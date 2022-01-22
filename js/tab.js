@@ -1,4 +1,4 @@
-const $tab = $("#tab"); 
+const $tab = $("#tabtab"); 
 const $btns = $tab.find("dt a"); 
 const $boxs = $tab.find("dd"); 
 
