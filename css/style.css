@@ -103,6 +103,55 @@ section {
         left: 50%;
         transform: translate(-50%, -50%); }
 
+#tabbasics {
+  width: 600px;
+  border: 1px solid #000;
+  position: relative;
+  margin: 100px auto;
+  padding-left: 200px;
+  box-sizing: border-box; }
+  #tabbasics dt {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: 0; }
+    #tabbasics dt:nth-of-type(1) {
+      bottom: calc(50px * 2);
+      /* 100px*/ }
+    #tabbasics dt:nth-of-type(2) {
+      bottom: calc(50px * 1);
+      /* 50px*/ }
+    #tabbasics dt:nth-of-type(3) {
+      bottom: calc(50px * 0);
+      /* 0px*/ }
+    #tabbasics dt a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #555;
+      font: bold 14px/50px 'arial';
+      color: #aaa;
+      text-align: center; }
+      #tabbasics dt a.on {
+        background: #fff;
+        color: #222; }
+  #tabbasics dd {
+    width: 100%;
+    background: #fff;
+    padding: 60px;
+    box-sizing: border-box;
+    display: none; }
+    #tabbasics dd#tab1 {
+      display: block;
+      height: 300px; }
+    #tabbasics dd#tab2 {
+      height: 400px; }
+    #tabbasics dd#tab3 {
+      height: 350px; }
+    #tabbasics dd a {
+      font: bold 30px/1 'arial';
+      color: blue; }
+
 #tab {
   width: 600px;
   border: 1px solid #000;
