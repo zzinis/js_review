@@ -36,3 +36,26 @@ $("#navi li a").on("click", function(e){
         scrollTop : targetPos
     },1000);
 });
+
+
+let posArr = []; 
+const $btns = $("#navi li"); 
+let $boxs = $(".myScroll"); 
+let len = $btns.length; 
+
+
+for(let i=0; i<len; i++){
+    posArr.push($boxs.eq(i).offset().top);     
+}
+
+$(window).on("scroll", function(){
+    var scroll = $(this).scrollTop(); 
+
+    for(let i =0; i<len; i++){
+        if(scroll >= posArr[i]){
+            $btns.children("a").removeClass("on"); 
+            $btns.eq(i).children("a").addClass("on"); 
+        }
+    }
+}); 
+
