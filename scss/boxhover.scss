@@ -1,0 +1,100 @@
+@charset 'utf-8';
+
+#box{
+    width: 100%;
+    padding: 180px 0 150px;
+
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+
+        h1{
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        h2{
+            text-align: center;
+            font: 15px/1 'arial';
+            margin-bottom: 30px;
+        }
+        .btnCall{
+            margin: 100px;
+            display: block;
+            width: 40px;
+            height: 40px;
+            position: relative;
+            border: 1px solid red;
+
+            &::before{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 2px;
+                background: #000;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: rotate(0deg);
+                transition:top 0.5s 0s, transform 0.5s 0.5s; 
+
+            }
+            &::after{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 2px;
+                background: #000;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transform: rotate(0deg);
+                transition:bottom 0.5s 0s, transform 0.5s 0.5s; 
+
+            }
+
+            span{
+                display: block;
+                position: absolute;
+                top: 50%;
+                margin-top: -1px;                
+                text-indent: -9999px;
+                left: 0;
+                transition: 0.5s;
+                width: 100%;
+                height: 2px;
+                background: #000;
+            }
+
+            &.on span{ transform: translateX(100%); opacity: 0;}
+            &.on::before{transform: rotate(45deg); top: calc(50% - 1px);}
+            &.on::after{transform: rotate(-45deg); bottom: calc(50% - 1px);}
+        }
+
+        .wrap{
+
+            article{
+                width: 280px;
+                float: left;
+                margin-right: 20px;
+                border: 1px solid #999;
+                
+
+                &:last-child{
+                    margin-right: 0px;
+                }
+
+                .pic{
+                    width: 100%;
+                    height: 150px;
+                    background: #555;
+                }
+
+                .txtbox{
+                    width: 100%;
+                    padding: 40px;
+
+                }
+            }
+        }
+    }
+}
