@@ -12,8 +12,17 @@
 </head>
 <body>
     <div class="alert-box" id="alert">알림창</div>
-    <button onclick="document.getElementById('alert').style.display = 'block'">열림버튼</button>
-    <button onclick="document.getElementById('alert').style.display = 'none'">닫기버튼</button>
+    <button onclick="openModal()">열림버튼</button>
+    <button onclick="closeModal()">닫기버튼</button>
 
+    <script>
+
+        function openModal(){
+            document.getElementById('alert').style.display = 'block'
+        }
+        function closeModal(){
+            document.getElementById('alert').style.display = 'none'
+        }
+    </script>
 </body>
 </html>
