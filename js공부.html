@@ -11,18 +11,29 @@
     <script defer src="js/cookie.js"></script>
 </head>
 <body>
-    <div class="alert-box" id="alert">알림창</div>
-    <button onclick="openModal()">열림버튼</button>
-    <button onclick="closeModal()">닫기버튼</button>
+    <div class="alert-box" id="alert">
+        <p id="title">알림창</p>
+        <button id="close">닫기</button>
+    </div>
+    <button onclick="alertModal('아이디를 입력하세요')">버튼1</button>
+    <button onclick="alertModal('비밀번호를 입력하세요')">버튼2</button>
 
     <script>
 
-        function openModal(){
-            document.getElementById('alert').style.display = 'block'
-        }
-        function closeModal(){
+        document.getElementById('close').addEventListener('click',function(){
             document.getElementById('alert').style.display = 'none'
+        });
+
+        function openModal(e){
+            document.getElementById('alert').style.display = e;
         }
+        function alertModal(index){
+            document.getElementById('title').innerHTML = index ;
+            document.getElementById('alert').style.display = 'block';
+        }
+        // function closeModal(){
+        //     document.getElementById('alert').style.display = 'none'
+        // }
     </script>
 </body>
 </html>
