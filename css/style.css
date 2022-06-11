@@ -822,6 +822,68 @@ body > a {
 button {
   width: 60px; }
 
+> .wrap {
+  width: 400px; }
+  > .wrap .navbar {
+    width: 100%;
+    height: 50px;
+    background: #999;
+    padding: 0px 5px; }
+    > .wrap .navbar::after {
+      content: '';
+      display: block;
+      clear: both; }
+    > .wrap .navbar span {
+      color: #666;
+      float: left;
+      line-height: 50px; }
+    > .wrap .navbar button {
+      width: 20px;
+      background: none;
+      color: #111;
+      float: right;
+      line-height: 50px; }
+  > .wrap .list {
+    width: 100%;
+    display: none; }
+    > .wrap .list .show {
+      display: block; }
+    > .wrap .list li {
+      border-bottom: 1px solid #111; }
+
+> .wrap1 {
+  width: 600px;
+  border: 1px solid #111; }
+  > .wrap1::after {
+    content: '';
+    display: block;
+    clear: both; }
+  > .wrap1 .box1 {
+    width: 200px;
+    height: 200px;
+    background: #7770;
+    float: left; }
+  > .wrap1 .box2 {
+    width: 200px;
+    height: 200px;
+    background: #666;
+    float: left; }
+  > .wrap1 .box3 {
+    width: 200px;
+    height: 400px;
+    background: #555;
+    float: left; }
+  > .wrap1 .box4 {
+    width: 200px;
+    height: 200px;
+    background: #444;
+    float: left; }
+  > .wrap1 .box5 {
+    width: 200px;
+    height: 200px;
+    background: #222;
+    float: left; }
+
 #tab {
   width: 600px;
   border: 1px solid #000;
